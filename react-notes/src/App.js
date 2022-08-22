@@ -5,22 +5,7 @@ import Search from "./components/Search"
 import Header from "./components/Header"
 
 const App = () => {
-  const [notes, setNotes] = useState([{
-    id: nanoid(),
-    text: "This is my first note!",
-    date: "08/23/2022"
-  },
-  {
-    id: nanoid(),
-    text: "This is my second note!",
-    date: "08/23/2022"
-  },
-  {
-    id: nanoid(),
-    text: "This is my third note!",
-    date: "08/24/2022"
-  }
-])
+  const [notes, setNotes] = useState([])
 
 const [searchText, setSearchText] = useState("")
 const [darkMode, setDarkMode] = useState(false)
